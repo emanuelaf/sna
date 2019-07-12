@@ -156,7 +156,7 @@ ggraph(connected_component, layout = "nicely") +
 tbl_connected_component <- as_tibble(connected_component)
 
 # correlation between centrality measures
-cor(tbl_connected_component[,4:8])
+cor(tbl_connected_component[,3:7])
 
 ggplot(tbl_connected_component) +
   geom_point(aes(x = w_degree, y = betweenness))
